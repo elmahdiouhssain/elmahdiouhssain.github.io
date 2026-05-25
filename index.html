@@ -3,12 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elmahdi Ouhssain | Analyste Développeur</title>
+  <title>Elmahdi Ouhssain | Analyste Développeur / Software Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    .top-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white !important;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+      text-decoration: none;
+    }
+
+    .lang-switch {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -199,7 +228,14 @@
     <aside class="sidebar">
       <div class="profile">
         <h1>Elmahdi<br>Ouhssain</h1>
-        <h2>Analyste Développeur</h2>
+        <h2 id="jobTitle">Analyste Développeur</h2>
+
+        <div class="top-actions">
+          <button class="btn lang-switch" onclick="toggleLanguage()">🇫🇷 / 🇬🇧</button>
+          <a class="btn" href="CV_Elmahdi_Ouhssain_OnePage.pdf" download>
+            ⬇ Télécharger CV
+          </a>
+        </div>
       </div>
 
       <div class="section contact">
@@ -240,12 +276,14 @@
     <main class="main">
 
       <section class="main-section">
-        <h3>Profil Professionnel</h3>
+        <h3 id="profileTitle">Profil Professionnel</h3>
         <p>
+          <span id="profileText">
           Analyste Développeur passionné par les technologies de l'information,
           le développement applicatif et l'amélioration continue des systèmes.
           Expérience en développement, maintenance et optimisation d'applications métiers,
           avec une forte capacité d'analyse, de résolution de problèmes et de collaboration.
+        </span>
         </p>
 
         <div class="badge-container">
@@ -318,5 +356,26 @@
     </main>
   </div>
 
+  <script>
+    let currentLang = 'fr';
+
+    function toggleLanguage() {
+      const title = document.getElementById('jobTitle');
+      const profileTitle = document.getElementById('profileTitle');
+      const profileText = document.getElementById('profileText');
+
+      if (currentLang === 'fr') {
+        title.innerText = 'Software Analyst Developer';
+        profileTitle.innerText = 'Professional Profile';
+        profileText.innerText = 'Passionate Software Analyst Developer with experience in application development, systems optimization, and IT support. Skilled in analyzing business requirements, developing scalable solutions, and collaborating effectively within technical teams.';
+        currentLang = 'en';
+      } else {
+        title.innerText = 'Analyste Développeur';
+        profileTitle.innerText = 'Profil Professionnel';
+        profileText.innerText = "Analyste Développeur passionné par les technologies de l'information, le développement applicatif et l'amélioration continue des systèmes. Expérience en développement, maintenance et optimisation d'applications métiers, avec une forte capacité d'analyse, de résolution de problèmes et de collaboration.";
+        currentLang = 'fr';
+      }
+    }
+  </script>
 </body>
 </html>
