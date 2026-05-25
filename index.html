@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elmahdi Ouhssain | Analyste Développeur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fb;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    .sidebar {
+      background: linear-gradient(180deg, #0f172a, #1e3a5f);
+      color: white;
+      padding: 40px 30px;
+    }
+
+    .profile h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .profile h2 {
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      color: #cbd5e1;
+    }
+
+    .contact p,
+    .skills li,
+    .languages li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      list-style: none;
+    }
+
+    .skills ul,
+    .languages ul {
+      padding-left: 0;
+    }
+
+    .main {
+      padding: 45px;
+    }
+
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    .main h3 {
+      font-size: 20px;
+      color: #1e3a5f;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .main h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 50px;
+      height: 3px;
+      background: #2563eb;
+      border-radius: 4px;
+    }
+
+    .main p {
+      font-size: 15px;
+      color: #475569;
+    }
+
+    .job {
+      margin-bottom: 28px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .job-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .job-date {
+      font-size: 13px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+
+    .company {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    .job ul {
+      padding-left: 18px;
+    }
+
+    .job li {
+      margin-bottom: 8px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .badge {
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .sidebar,
+      .main {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="profile">
+        <h1>Elmahdi<br>Ouhssain</h1>
+        <h2>Analyste Développeur</h2>
+      </div>
+
+      <div class="section contact">
+        <div class="section-title">Contact</div>
+        <p>📍 Agadir, Maroc</p>
+        <p>📞 +212601074681</p>
+        <p>📧 elmahdi.ouhssain@gmail.com</p>
+        <p>
+          🔗 <a href="https://www.linkedin.com/in/elmahdi-ouhssain/" target="_blank">
+          LinkedIn Profile</a>
+        </p>
+      </div>
+
+      <div class="section skills">
+        <div class="section-title">Compétences</div>
+        <ul>
+          <li>Java / JavaScript</li>
+          <li>PHP / SQL</li>
+          <li>HTML / CSS</li>
+          <li>MySQL / SQL Server</li>
+          <li>Git & GitHub</li>
+          <li>Agile / Scrum</li>
+          <li>Support Informatique</li>
+          <li>Maintenance Réseaux</li>
+        </ul>
+      </div>
+
+      <div class="section languages">
+        <div class="section-title">Langues</div>
+        <ul>
+          <li>🇫🇷 Français — Courant</li>
+          <li>🇬🇧 Anglais — Professionnel</li>
+          <li>🇲🇦 Arabe — Natif</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+
+      <section class="main-section">
+        <h3>Profil Professionnel</h3>
+        <p>
+          Analyste Développeur passionné par les technologies de l'information,
+          le développement applicatif et l'amélioration continue des systèmes.
+          Expérience en développement, maintenance et optimisation d'applications métiers,
+          avec une forte capacité d'analyse, de résolution de problèmes et de collaboration.
+        </p>
+
+        <div class="badge-container">
+          <span class="badge">Développement Web</span>
+          <span class="badge">Analyse Technique</span>
+          <span class="badge">Maintenance Applicative</span>
+          <span class="badge">Support IT</span>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h3>Expérience Professionnelle</h3>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Analyste Programmeur / Développeur IT</div>
+            <div class="job-date">2023 - 2026</div>
+          </div>
+          <div class="company">Tip Solutions — Agadir, Maroc</div>
+
+          <ul>
+            <li>Développement et maintenance d'applications internes.</li>
+            <li>Analyse des besoins métiers et proposition de solutions techniques adaptées.</li>
+            <li>Optimisation des performances applicatives.</li>
+            <li>Documentation technique et support utilisateur.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Technicien / Support Informatique</div>
+            <div class="job-date">2022 - 2023</div>
+          </div>
+          <div class="company">Miratradiv — Agadir, Maroc</div>
+
+          <ul>
+            <li>Support technique utilisateurs et maintenance informatique.</li>
+            <li>Installation et configuration des systèmes et logiciels.</li>
+            <li>Résolution des incidents techniques et assistance réseau.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h3>Formation</h3>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title">Institut ILEIC des Études Informatiques & Commerciales</div>
+            <div class="job-date">2019</div>
+          </div>
+
+          <div class="company">Formation en Informatique / Développement / Réseaux</div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <h3>Qualités Professionnelles</h3>
+
+        <div class="badge-container">
+          <span class="badge">Esprit Analytique</span>
+          <span class="badge">Travail en Équipe</span>
+          <span class="badge">Résolution de Problèmes</span>
+          <span class="badge">Organisation</span>
+          <span class="badge">Adaptabilité</span>
+          <span class="badge">Autonomie</span>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
